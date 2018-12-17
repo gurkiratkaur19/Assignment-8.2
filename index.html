@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+	<script>
+	function prepareFood(table_no, items, callback){
+		console.log("preparing food for items", items);
+		callback();
+	}
+	
+	var items =['Burger','pasta','coke'];
+	
+	prepareFood(1, items, function(){
+		serveFood(1, items);
+	});
+	
+	function serveFood(table_no, items){
+	console.log("serving food for items", items);
+	}
+	</script>
+	</body>
+</html>
